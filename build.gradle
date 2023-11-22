@@ -6,12 +6,19 @@ repositories {
     mavenCentral()
 }
 
+//dependencies {
+//    testImplementation(
+//            "com.codeborne:selenide:7.0.2",
+//            "org.junit.jupiter:junit-jupiter:5.9.3",
+//            'com.github.valfirst.browserup-proxy:browserup-proxy-core:2.2.15')
+//}
+
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:7.0.2",
-            "org.junit.jupiter:junit-jupiter:5.9.3",
-            'com.github.valfirst.browserup-proxy:browserup-proxy-core:2.2.15')
+            "com.codeborne:selenide-proxy:7.0.2",
+            "org.junit.jupiter:junit-jupiter:5.9.3")
 }
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
